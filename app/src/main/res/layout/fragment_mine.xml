@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500px"
+            android:background="@color/themeYellow">
+
+            <ImageView
+                android:id="@+id/mine_settings_iv"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10px"
+                android:src="@drawable/notice" />
+
+            <ImageView
+                android:id="@+id/mine_nologin_iv"
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/userhead"
+                />
+                 <TextView
+                     android:layout_centerHorizontal="true"
+                     android:layout_below="@id/mine_nologin_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20px"
+                    android:gravity="center"
+                    android:text="用户名"
+                     android:id="@+id/textView" />
+            <ImageView
+                android:layout_below="@id/mine_nologin_iv"
+                android:background="@drawable/spread"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20px"
+                android:layout_marginRight="20px"
+                android:layout_marginTop="20px"
+                android:layout_alignBottom="@+id/textView" />
+
+
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+
+        <com.zhy.autolayout.AutoLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:layout_marginBottom="10px"
+            android:layout_marginTop="25px">
+
+            <TextView
+                android:id="@+id/tv_mine_shopcat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/pull_down"
+                android:gravity="center_horizontal"
+                android:text="0.00元"
+                android:textColor="@color/themeYellow" />
+
+            <TextView
+                android:id="@+id/tv_mine_wait_pay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/pull_down"
+                android:gravity="center_horizontal"
+                android:text="0个"
+                android:textColor="@color/themeYellow" />
+
+            <TextView
+                android:id="@+id/tv_mine_wait_send_good"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/pull_down"
+                android:gravity="center_horizontal"
+                android:text="2条"
+                android:textColor="@color/themeYellow" />
+
+
+        </com.zhy.autolayout.AutoLinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15px"
+            android:background="#e4dbd4" />
+
+        <com.zhy.autolayout.AutoRelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:drawableRight="@drawable/spread"
+                android:drawableLeft="@drawable/mine_order_icon"
+                android:id="@+id/tv_mine_order_icon"
+                android:layout_width="match_parent"
+                android:layout_height="72px"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:padding="15px"
+                android:text="   编辑质料"
+                />
+
+            <View
+                android:id="@+id/mine_view_color_top"
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:layout_below="@+id/tv_mine_order_icon"
+                android:background="#e4dbd4" />
+
+            <TextView
+                android:drawableRight="@drawable/spread"
+                android:drawableLeft="@drawable/favoriteshop"
+                android:id="@+id/tv_mine_invite_gift_icon"
+                android:layout_width="match_parent"
+                android:layout_height="72px"
+                android:layout_below="@+id/mine_view_color_top"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:padding="15px"
+                android:text="   喜欢的店"
+                />
+            <View
+                android:id="@+id/mine_view_color_top1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_mine_invite_gift_icon"
+                android:background="#e4dbd4" />
+            <TextView
+                android:drawableRight="@drawable/spread"
+                android:id="@+id/tv_mine_face_test_icon"
+                android:layout_width="match_parent"
+                android:layout_height="72px"
+                android:drawableLeft="@drawable/coupon"
+                android:layout_below="@+id/tv_mine_invite_gift_icon"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:padding="15px"
+                android:text="   优惠券"
+                />
+
+            <View
+                android:id="@+id/mine_view_color_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="15px"
+                android:layout_below="@+id/tv_mine_face_test_icon"
+                android:background="#e4dbd4" />
+
+            <TextView
+                android:drawableRight="@drawable/spread"
+                android:drawableLeft="@drawable/highopinion"
+                android:id="@+id/tv_mine_coupon_icon"
+                android:layout_width="match_parent"
+                android:layout_height="72px"
+                android:layout_below="@+id/mine_view_color_bottom"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:padding="15px"
+                android:text="   好评支持"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_mine_coupon_icon"
+                android:background="#e4dbd4" />
+            <TextView
+                android:drawableRight="@drawable/spread"
+                android:drawableLeft="@drawable/feedback"
+                android:id="@+id/tv_mine_lottery_icon"
+                android:layout_width="match_parent"
+                android:layout_height="72px"
+                android:layout_below="@+id/tv_mine_coupon_icon"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:padding="15px"
+                android:text="   意见反馈"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_mine_lottery_icon"
+                android:background="#e4dbd4" />
+            <TextView
+                android:drawableRight="@drawable/spread"
+                android:drawableLeft="@drawable/setup"
+                android:id="@+id/tv_mine_collection_icon"
+                android:layout_width="match_parent"
+                android:layout_height="72px"
+                android:layout_below="@+id/tv_mine_lottery_icon"
+                android:layout_marginBottom="10px"
+                android:layout_marginTop="10px"
+                android:gravity="center_vertical"
+                android:padding="15px"
+                android:text="   设置"
+                />
+
+        </com.zhy.autolayout.AutoRelativeLayout>
+    </com.zhy.autolayout.AutoLinearLayout>
+</ScrollView>

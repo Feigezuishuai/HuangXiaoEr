@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zz.huangxiaoer.activity.WelcomeActivity">
+
+    <com.zz.huangxiaoer.manager.LazyViewPager
+        android:id="@+id/vp_welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.zz.huangxiaoer.manager.LazyViewPager>
+
+    <ImageButton
+       android:visibility="gone"
+        android:id="@+id/ibtn_welcome"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1000px"
+        android:background="@mipmap/btn_welcome" />
+
+</com.zhy.autolayout.AutoRelativeLayout>

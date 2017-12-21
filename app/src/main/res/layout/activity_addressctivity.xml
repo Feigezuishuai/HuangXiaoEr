@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_addressctivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zz.huangxiaoer.activity.AddressActivity">
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@color/themeYellow"
+        android:layout_height="80px">
+        <ImageView
+            android:layout_marginRight="10px"
+            android:background="@drawable/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <com.zz.huangxiaoer.manager.MyEditText
+            android:id="@+id/edt_operator_name"
+            android:layout_width="500px"
+            android:layout_height="60px"
+            android:background="@drawable/rounded_edittext"
+            android:drawableLeft="@drawable/serch"
+            android:ellipsize="end"
+            android:hint="搜索位置"
+            android:singleLine="true"
+            android:textSize="30px" />
+        <TextView
+            android:padding="20px"
+            android:text="搜索"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <ListView
+        android:id="@+id/lv_addressactivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</com.zhy.autolayout.AutoLinearLayout>

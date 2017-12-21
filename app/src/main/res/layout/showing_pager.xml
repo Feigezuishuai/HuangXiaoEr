@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/showLoadError"
+        layout="@layout/showingpage_load_error"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/showLoading"
+        layout="@layout/showingpage_loading"
+        android:visibility="gone" />
+
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/showSuccessView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+
+</com.zhy.autolayout.AutoLinearLayout>

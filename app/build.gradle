@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.zz.huangxiaoer"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    android{
+        defaultConfig{
+            ndk {
+                // 设置支持的SO库架构
+                abiFilters 'armeabi', 'armeabi-v7a' , 'x86'//'armeabi-v7a', 'x86_64', 'arm64-v8a'
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    //fresco
+    compile 'com.facebook.fresco:fresco:0.11.0'
+    //AutoLayout屏幕适配
+    compile 'com.zhy:autolayout:1.4.3'
+    //显示gif动画
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.8'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'org.xutils:xutils:3.3.36'
+    //Gson
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
+    compile 'pub.devrel:easypermissions:0.1.9'
+    compile files('libs/TencentLocationSDK_v5.0.1_r251203_170116_1729.jar')
+    compile files('libs/TencentMapSDK_Raster_v1.0.6.jar')
+}
