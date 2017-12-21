@@ -46,7 +46,7 @@ public class MainActivity extends AutoLayoutActivity implements View.OnClickList
             }
         }
     };
-
+//啥都不做就测试下
     private EditText etphone_login;
     private EditText etcode_login;
     private Button btnentry_login;
